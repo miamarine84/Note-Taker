@@ -1,42 +1,9 @@
-// const express = require("express");
-// const bodyParser = require('body-parser');
-
-// const fs = require('fs')
-// const app = express();
-// const port = 3000;
-// const path = require('path');
-// const { json } = require("body-parser");
-
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
-// app.use(express.static('public'))
-
-
-// app.get('/', function(req, res) {
-//   res.sendFile(path.join(__dirname, '/../../index.html'))
-// })
-
-// app.get('/notes', (req, res)=> {
-//   res.sendFile(path.join(__dirname, "../../notes.html"))
-// })
-
-// app.get('/api/notes', ()=>{
-//   fs.readFileSync('../../../db/db.json','utf-8',(error , data)=>{
-//     res.json(JSON.parse(data));
-//   } )
-// })
-
-
-// app.listen(port, (console.log(`This is working on port number: ${port}`)))
-
-
-
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const mainDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
