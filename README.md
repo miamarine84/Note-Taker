@@ -1,6 +1,12 @@
 # Note-Taker
 Note Taker with Express
 
+## Quick Video 
+
+![Image](/NoteTaker.gif)
+
+If this screen may be too small please feel free to check out this link [My Note Taker Video](https://drive.google.com/file/d/1RX-tSVSm8iC-_4weDqgk5xpiKkhtBKXX/view)
+
 ## Description
 
 Created an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
